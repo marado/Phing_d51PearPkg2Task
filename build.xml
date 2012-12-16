@@ -23,7 +23,7 @@
                      baseinstalldir="/">
             <name>Phing_d51PearPkg2Task</name>
             <summary>An alternative to phing's default pearpkg2</summary>
-            <channel>pear.domain51.com</channel>
+            <channel>pear.cakephp.org</channel>
             <description>
                 <!--        Don't exceed this width         -->
                 This package provides an alternative to phing's
@@ -47,6 +47,13 @@
                          channel="pear.php.net"
                          minimum_version="1.6.0" />
             </dependencies>
+
+            <changelog version="0.6.4" date="2012-12-15" license="LGPL">
+                * Add support for missing 'exceptions' key.
+                * First release on pear.cakephp.org. It seems
+                  the old maintainer didn't have time for the
+                  project. Create this fork for the time being.
+            </changelog>
 
             <changelog version="0.6.3" date="2010-08-30" license="LGPL">
                 <!--        Don't exceed this width         -->
