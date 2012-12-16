@@ -25,15 +25,16 @@
             <summary>An alternative to phing's default pearpkg2</summary>
             <channel>pear.domain51.com</channel>
             <description>
-            	<!--        Don't exceed this width         -->
+                <!--        Don't exceed this width         -->
                 This package provides an alternative to phing's
-            	bundled pearpkg2, allowing for a build script 
-            	that more closely resembles a real 
-            	package.xml2.0 file or using the API that is 
-            	available by using PEAR_PackageFileManager2.
+                bundled pearpkg2, allowing for a build script 
+                that more closely resembles a real 
+                package.xml 2.0 file or using the API that is 
+                available by using PEAR_PackageFileManager2.
             </description>
             
-            <lead user="tswicegood" name="Travis Swicegood" email="travis@domain51.com" />
+            <lead user="markstory" name="Mark Story" email="mark@mark-story.com" />
+            <lead user="tswicegood" name="Travis Swicegood" email="travis@domain51.com" active="false" />
             <license>LGPL</license>
             
             <version release="${version}" api="1.0" />
@@ -41,9 +42,7 @@
             
             <dependencies>
                 <php minimum_version="5.2.0" />
-                
                 <pear minimum_version="1.6.0" />
-                
                 <package name="PEAR_PackageFileManager"
                          channel="pear.php.net"
                          minimum_version="1.6.0" />
