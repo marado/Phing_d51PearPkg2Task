@@ -177,7 +177,6 @@
             </fileset>
         </copy>
         <delete dir="./build/phing" />
-        <delete file="Phing_d51PearPkg2Task-${version}.tgz" />
         <tar compression="gzip" destfile="Phing_d51PearPkg2Task-${version}.tgz" basedir="./build" />
     </target>
 
