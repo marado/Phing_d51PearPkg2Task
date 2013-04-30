@@ -6,7 +6,7 @@
     <includepath classpath="${project.basedir}/src" />
     <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" />
     
-    <property name="version" value="0.6.4" />
+    <property name="version" value="0.6.5" />
     
     <target name="export">
         <echo msg="Exporting SVN files" />
@@ -43,10 +43,14 @@
             <dependencies>
                 <php minimum_version="5.2.0" />
                 <pear minimum_version="1.6.0" />
-                <package name="PEAR_PackageFileManager"
+                <package name="PEAR_PackageFileManager2"
                          channel="pear.php.net"
-                         minimum_version="1.6.0" />
+                         minimum_version="1.0.1" />
             </dependencies>
+
+            <changelog version="0.6.5" date="2013-04-29" license="LGPL">
+                * Add support for 'addhiddenfiles' option.
+            </changelog>
 
             <changelog version="0.6.4" date="2012-12-15" license="LGPL">
                 * Add support for missing 'exceptions' key.
@@ -169,7 +173,7 @@
     </target>
     
     <target name="make" depends="build">
-        <echo msg="Creating PEAR archive file for PHP_Callback" />
+        <echo msg="Creating PEAR archive file for Phing_d51PearPkg2Task" />
         <mkdir dir="./build/Phing_d51PearPkg2Task-${version}" />
         <copy todir="./build/Phing_d51PearPkg2Task-${version}">
             <fileset dir="./build">
