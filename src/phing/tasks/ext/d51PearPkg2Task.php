@@ -255,7 +255,21 @@ class d51PearPkg2Task extends Task
     {
         $this->_options['baseinstalldir'] = $base_install_dir;
     }
-    
+
+    /**
+     * Handles the addhiddenfiles attribute of d51pearpkg2
+     *
+     * This corresponds to the addhiddenfiles option present in 
+     * {@link PEAR_PackageFileManager2::setOptions}.
+     *
+     *
+     * @param string $base_install_dir
+     */
+    public function setAddHiddenFiles($add_hidden)
+    {
+        $this->_options['addhiddenfiles'] = $add_hidden;
+    }
+
     /**
      * Handles the dir attribute of d51pearpkg2
      *
