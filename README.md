@@ -5,5 +5,7 @@ a build script that more closely resembles a real package.xml2.0 file or using
 the API that is available by using PEAR_PackageFileManager2.
 
 This package can be installed via pear, from the CakePHP PEAR channel:
-# pear channel-discover pear.cakephp.org
-# pear install cakephp/Phing_d51PearPkg2Task
+
+ # pear channel-discover pear.cakephp.org
+
+ # pear install cakephp/Phing_d51PearPkg2Task
